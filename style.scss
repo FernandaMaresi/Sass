@@ -1,0 +1,141 @@
+
+
+/*Variaveis */
+$primaryColor: #f43700;
+$secundaryColor:#fb6458;
+$terceiraColor: #a749f8;
+$quartaColor: #02bafc;
+$quintaColor:#00d47d;
+
+/* Bory */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    width: 70%;
+    height: 70vh;
+    background-color: #1a1a1a;
+    align-items: center;
+    &:hover {
+        animation: mymovecolor 3s infinite;
+    }
+}
+
+.container{
+    width: 300px;
+    height: 500px;
+    margin-top: 100px;
+ //  background-color: #1a1a1a;
+   //box-shadow: $quintaColor 10px;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover{
+        //background-color: #1a1a1a;
+        .olhos1l , .olhos1r, .olhos3l, .olhos3r, .olhos5l, .olhos5r{
+            opacity: 1;
+        }
+    }
+   
+}
+.logo {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+  }
+
+//funcoes
+@keyframes mymovecolor {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+@keyframes mymovetop {
+    from {top: 0px;}
+    to {top: 150px;}
+}
+
+.icon {
+    position: absolute;
+    top: 120px;
+    left: 150px;
+}
+/* Bolas */
+
+.bol {
+    width:150px;
+    height:150px;
+    background: red;
+   
+  }
+ 
+.bola1 {
+    background-color: $primaryColor;
+    border-top-left-radius:150px;
+    border-bottom-left-radius:150px;
+    &:hover {
+        background: red;
+        animation: mymovecolor 5s infinite; 
+    }
+    
+}
+
+.bola2 {
+    background-color: $secundaryColor;
+    border-top-right-radius:150px;
+    border-bottom-right-radius:150px;
+   
+    // animacao
+    &:hover{
+        background-image: url("pac-man4.png") ; 
+        background-color: black;
+        background-repeat: no-repeat;  
+        position: relative;
+        animation: mymovetop 5s;
+        animation-iteration-count: 5;
+    }
+}
+.bola3 {
+    background-color:$terceiraColor;
+    border-top-left-radius:150px;
+    border-bottom-left-radius:150px; 
+}
+
+.bola4 {
+    border-radius: 150%;
+    background-color:$quartaColor;
+}
+
+.bola5 {
+    background-color: $quintaColor;
+    border-top-left-radius:150px;
+    border-bottom-left-radius:150px;
+    border-bottom-right-radius:150px;
+}
+
+//olhos
+.olhos{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%; 
+    opacity: 0.0;
+}
+.olhos1r {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.olhos1l {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.olhos3r,.olhos5r {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.olhos3l, .olhos5l{
+    margin-top: 12px;
+    margin-left: 30px;
+}
