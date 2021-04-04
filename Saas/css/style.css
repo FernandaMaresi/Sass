@@ -1,0 +1,172 @@
+/*Variaveis */
+/* Bory */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 70%;
+  height: 70vh;
+  background-color: #1a1a1a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body:hover {
+  -webkit-animation: mymovecolor 3s infinite;
+          animation: mymovecolor 3s infinite;
+}
+
+.container {
+  width: 300px;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:hover .olhos1l, .container:hover .olhos1r, .container:hover .olhos3l, .container:hover .olhos3r, .container:hover .olhos5l, .container:hover .olhos5r {
+  opacity: 1;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes mymovecolor {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes mymovecolor {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@-webkit-keyframes mymovetop {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 150px;
+  }
+}
+
+@keyframes mymovetop {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 150px;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+}
+
+/* Bolas */
+.bol {
+  width: 150px;
+  height: 150px;
+  background: red;
+}
+
+.bola1 {
+  background-color: #f43700;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.bola1:hover {
+  background: red;
+  -webkit-animation: mymovecolor 5s infinite;
+          animation: mymovecolor 5s infinite;
+}
+
+.bola2 {
+  background-color: #fb6458;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.bola2:hover {
+  background-image: url("pac-man4.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-animation: mymovetop 5s;
+          animation: mymovetop 5s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+}
+
+.bola3 {
+  background-color: #a749f8;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.bola4 {
+  border-radius: 150%;
+  background-color: #02bafc;
+}
+
+.bola5 {
+  background-color: #00d47d;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.olhos {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.0;
+}
+
+.olhos1r {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.olhos1l {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.olhos3r, .olhos5r {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.olhos3l, .olhos5l {
+  margin-top: 12px;
+  margin-left: 30px;
+}
+/*# sourceMappingURL=style.css.map */
